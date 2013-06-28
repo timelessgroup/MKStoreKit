@@ -46,14 +46,14 @@
 #endif
 
 #ifndef OWN_SERVER
-    #define OWN_SERVER nil
+    #define OWN_SERVER [NSString stringWithFormat:@"%@%@/inapp/", TVAPIURL, TVAPIPath]
 #endif
 
 #ifndef REVIEW_ALLOWED
     #define REVIEW_ALLOWED 0
 #endif
 
-#warning Shared Secret Missing Ignore this warning if you don't use auto-renewable subscriptions
+//#warning Shared Secret Missing Ignore this warning if you don't use auto-renewable subscriptions
 #ifndef kSharedSecret
-    #define kSharedSecret @"<FILL IN YOUR SHARED SECRET HERE>"
+    #define kSharedSecret @"1ad0a6b3f4fa4d85a106cf789a9964a0"
 #endif

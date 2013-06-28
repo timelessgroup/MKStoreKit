@@ -37,7 +37,7 @@ static VerificationController *singleton;
     {
         if (error)
         {
-#warning Handle the error here.
+//#warning Handle the error here.
         }
         return nil;
     }
@@ -55,7 +55,7 @@ static VerificationController *singleton;
     {
         if (error)
         {
-#warning Handle the error here.
+//#warning Handle the error here.
         }
         return nil;
     }
@@ -90,7 +90,7 @@ static VerificationController *singleton;
     
 #warning Check for the correct itms verify receipt URL
     // Use ITMS_SANDBOX_VERIFY_RECEIPT_URL while testing against the sandbox.
-    NSString *serverURL = ITMS_PROD_VERIFY_RECEIPT_URL;
+    NSString *serverURL = ITMS_SANDBOX_VERIFY_RECEIPT_URL;
     
     // Create the POST request to the server.
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:serverURL]];
@@ -370,7 +370,7 @@ static VerificationController *singleton;
     if (isOk)
     {
         //Validation suceeded. Unlock content here.
-#warning Validation suceeded. Unlock content here.
+//#warning Validation suceeded. Unlock content here.
 
     }
 }
@@ -702,22 +702,22 @@ outLabel:
 
 - (NSString *)encodeBase64:(const uint8_t *)input length:(NSInteger)length
 {
-#warning Replace this method.
+//#warning Replace this method.
     return nil;
 }
 
 
 - (NSString *)decodeBase64:(NSString *)input length:(NSInteger *)length
 {
-#warning Replace this method.
+//#warning Replace this method.
     return nil;
 }
 
-#warning Implement this function.
+//#warning Implement this function.
 char* base64_encode(const void* buf, size_t size)
 { return NULL; }
 
-#warning Implement this function.
+//#warning Implement this function.
 void * base64_decode(const char* s, size_t * data_len)
 { return NULL; }
 

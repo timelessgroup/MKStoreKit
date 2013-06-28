@@ -8,7 +8,7 @@
 #define ITMS_SANDBOX_VERIFY_RECEIPT_URL     @"https://sandbox.itunes.apple.com/verifyReceipt";
 
 #define KNOWN_TRANSACTIONS_KEY              @"knownIAPTransactions"
-#define ITC_CONTENT_PROVIDER_SHARED_SECRET  @"your secret here"
+#define ITC_CONTENT_PROVIDER_SHARED_SECRET  @"1ad0a6b3f4fa4d85a106cf789a9964a0"
 
 char* base64_encode(const void* buf, size_t size);
 void * base64_decode(const char* s, size_t * data_len);
